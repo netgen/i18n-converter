@@ -1,5 +1,5 @@
 {
-	"name": "i18n-converter",
+	"name": "i18n-csv-converter",
 	"version": "1.0.0",
 	"description": "Convert between CSV and JSON translation formats for i18n",
 	"main": "./dist/cli.js",
@@ -24,10 +24,10 @@
 		"cli"
 	],
 	"author": "Netgen <info@netgen.hr>",
-	"homepage": "https://github.com/netgen/i18n-converter",
+	"homepage": "https://github.com/netgen/i18n-csv-converter",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/netgen/i18n-converter.git"
+		"url": "git+https://github.com/netgen/i18n-csv-converter.git"
 	},
 	"license": "MIT",
 	"engines": {
