@@ -1,6 +1,6 @@
 {
 	"name": "i18n-csv-converter",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "Convert between CSV and JSON translation formats for i18n",
 	"main": "./dist/cli.js",
 	"types": "./dist/cli.d.ts",
