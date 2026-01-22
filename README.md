@@ -171,4 +171,4 @@ node dist/cli.js json-to-csv ./locales -o output.csv
 
 ## License
 
-ISC
+This project is licensed under the [MIT License](LICENSE).
