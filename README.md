@@ -1,4 +1,4 @@
-# i18n-converter
+# i18n-csv-converter
 
 A CLI tool for converting between CSV and JSON translation formats for i18n applications.
 
@@ -9,19 +9,19 @@ A CLI tool for converting between CSV and JSON translation formats for i18n appl
 No installation needed! Just use `npx`:
 
 ```bash
-npx i18-converter <command>
+npx i18n-csv-converter <command>
 ```
 
 ### Local installation
 
 ```bash
-npm install -g i18-converter
+npm install -g i18n-csv-converter
 ```
 
 Or install locally in your project:
 
 ```bash
-npm install i18-converter
+npm install i18n-csv-converter
 ```
 
 ## Assumptions
@@ -39,10 +39,10 @@ Convert a CSV file to multiple JSON files (one per language):
 
 ```bash
 # Auto-detect languages from header row
-npx i18-converter csv-to-json input.csv --output-dir ./output
+npx i18n-csv-converter csv-to-json input.csv --output-dir ./output
 
 # Or specify languages explicitly (first row will be skipped)
-npx i18-converter csv-to-json input.csv --languages hr,sl,rs --output-dir ./output
+npx i18n-csv-converter csv-to-json input.csv --languages hr,sl,rs --output-dir ./output
 ```
 
 **Options:**
@@ -58,13 +58,13 @@ npx i18-converter csv-to-json input.csv --languages hr,sl,rs --output-dir ./outp
 **Examples:**
 ```bash
 # Auto-detect from header (recommended)
-npx i18-converter csv-to-json ./translations.csv -o ./locales
+npx i18n-csv-converter csv-to-json ./translations.csv -o ./locales
 
 # Explicit languages (skip header row)
-npx i18-converter csv-to-json input.csv -l en,fr,de -o ./locales
+npx i18n-csv-converter csv-to-json input.csv -l en,fr,de -o ./locales
 
 # With custom key column and fallback
-npx i18-converter csv-to-json input.csv -l hr,sl,rs --key-column 0 -f hr
+npx i18n-csv-converter csv-to-json input.csv -l hr,sl,rs --key-column 0 -f hr
 ```
 
 **CSV Format:**
@@ -83,10 +83,10 @@ Convert JSON file(s) or directory to CSV format with multiple language columns:
 
 ```bash
 # Convert directory (auto-detects all JSON files and languages from filenames)
-npx i18-converter json-to-csv ./locales --output output.csv
+npx i18n-csv-converter json-to-csv ./locales --output output.csv
 
 # Convert multiple files explicitly
-npx i18-converter json-to-csv en.json hr.json de.json --output output.csv
+npx i18n-csv-converter json-to-csv en.json hr.json de.json --output output.csv
 ```
 
 **Options:**
@@ -107,13 +107,13 @@ npx i18-converter json-to-csv en.json hr.json de.json --output output.csv
 **Examples:**
 ```bash
 # Convert all JSON files in a directory
-npx i18-converter json-to-csv ./locales/common -o ./translations/common.csv
+npx i18n-csv-converter json-to-csv ./locales/common -o ./translations/common.csv
 
 # Convert specific files
-npx i18-converter json-to-csv en.json hr.json de.json -o output.csv
+npx i18n-csv-converter json-to-csv en.json hr.json de.json -o output.csv
 
 # With custom separator
-npx i18-converter json-to-csv input.json -o output.csv -s _
+npx i18n-csv-converter json-to-csv input.json -o output.csv -s _
 ```
 
 **Input JSON Format:**

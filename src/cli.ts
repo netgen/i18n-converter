@@ -7,7 +7,7 @@ import { jsonToCsv } from "./commands/json-to-csv";
 const program = new Command();
 
 program
-	.name("i18n-converter")
+	.name("i18n-csv-converter")
 	.description("Convert between CSV and JSON translation formats")
 	.version("1.0.0");
 
