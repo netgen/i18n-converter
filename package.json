@@ -1,0 +1,45 @@
+{
+	"name": "i18n-converter",
+	"version": "1.0.0",
+	"description": "Convert between CSV and JSON translation formats for i18n",
+	"main": "./dist/cli.js",
+	"types": "./dist/cli.d.ts",
+	"bin": {
+		"i18-converter": "./dist/cli.js"
+	},
+	"files": [
+		"dist/**/*",
+		"README.md"
+	],
+	"scripts": {
+		"build": "tsc",
+		"prepublishOnly": "npm run build"
+	},
+	"keywords": [
+		"i18n",
+		"translations",
+		"csv",
+		"json",
+		"converter",
+		"cli"
+	],
+	"author": "Netgen <info@netgen.hr>",
+	"homepage": "https://github.com/netgen/i18n-converter",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/netgen/i18n-converter.git"
+	},
+	"license": "MIT",
+	"engines": {
+		"node": ">=14.0.0"
+	},
+	"dependencies": {
+		"commander": "^11.0.0",
+		"csv-parse": "^5.5.0",
+		"csv-stringify": "^6.4.0"
+	},
+	"devDependencies": {
+		"@types/node": "^20.0.0",
+		"typescript": "^5.0.0"
+	}
+}

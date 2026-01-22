@@ -1,0 +1,14 @@
+src/
+*.ts
+!*.d.ts
+tsconfig.json
+node_modules/
+.git/
+.env
+data/
+output/
+output.csv
+*.py
+pnpm-lock.yaml
+.gitignore
+.cursor/
